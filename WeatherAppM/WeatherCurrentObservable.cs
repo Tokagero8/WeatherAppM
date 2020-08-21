@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WeatherAppM
 {
@@ -63,6 +64,10 @@ namespace WeatherAppM
                 catch (Exception ex)
                 {
                     Console.WriteLine("An error occurred while searching for the city: " + ex);
+                    foreach (var observer in observers) //Wysłanie błędu do każdego z obserwatorów.
+                    {
+                        observer.OnError(ex);
+                    }
                 }
             }
         }

@@ -365,6 +365,7 @@
             this.Controls.Add(this.pictureBoxWeatherIcon);
             this.Controls.Add(this.labelTemperature);
             this.Controls.Add(this.labelCityName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeatherIcon)).EndInit();

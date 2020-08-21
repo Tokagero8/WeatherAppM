@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WeatherAppM
 {
@@ -34,7 +35,7 @@ namespace WeatherAppM
 
         public void OnError(Exception error)
         {
-            //Console.WriteLine("{0}: The location cannot be determined.", this.Name);
+            MessageBox.Show("City was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
         }
 
         public void OnNext(WeatherCurrent.major value)

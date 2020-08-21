@@ -30,13 +30,12 @@ namespace WeatherAppM
         }
         public void OnCompleted()
         {
-            //Console.WriteLine("The Location Tracker has completed transmitting data to {0}.", this.Name);
             this.Unsubscribe();
         }
 
         public void OnError(Exception error)
         {
-            //Console.WriteLine("{0}: The location cannot be determined.", this.Name);
+            MessageBox.Show("City was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
         }
 
         public void OnNext(WeatherForecast.major value)
