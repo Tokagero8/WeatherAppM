@@ -367,7 +367,7 @@
             this.Controls.Add(this.labelCityName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Aplikacja meteorologiczna";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeatherIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeatherIcon5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeatherIcon4)).EndInit();
